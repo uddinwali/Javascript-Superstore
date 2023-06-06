@@ -1,0 +1,88 @@
+body
+{
+	background-image:url(bg1.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+	
+
+
+
+
+
+#face
+{
+	position:absolute;
+	top:20%;
+	left:5%;
+	}
+	
+
+
+
+h2
+{
+	text-align:center;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size:38px;
+	
+}
+
+#face input
+{
+	display:block;
+	padding:10px;
+	width:450px;
+	height:40px;
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	background-color:rgba(44, 62, 80,0.9);
+	border:1px solid rgba(192, 57, 43,0.5);
+	border-radius:5px;
+	margin-bottom:10px;
+	box-shadow:0px 0px 15px rgba(192, 57, 43,0.5);
+	
+}
+
+
+
+::placeholder
+{
+	color:#bdc3c7;
+	
+}
+
+label
+{
+	color:white;
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#face #btn
+{
+	text-align:center;
+	background:#3498db;
+	font-size:18px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+#face #btn:hover
+{
+	background:rgba(192, 57, 43,0.9);
+	transition:0.4s;
+}
+
+
+#print
+{
+	height:300px;
+	width:300px;
+	background-color:white;
+	position:relative;
+	float:right;
+}

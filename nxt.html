@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="face.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<title>Wali Super Store</title>
+</head>
+
+<body>
+
+<h2> Wali Super Store </h2>
+<div id="face">
+
+
+
+<label>Enter Product Name </label>
+  <input type="text" name="user" id="n" placeholder="" required="required" value="" > <br />
+  
+  <label> Enter Quantity </label>
+<input type="text" name="pass" id="q" placeholder="" required="required" pattern="[0-9]" value="" /> <br />
+
+<label>Enter Price </label>
+  <input type="text" name="user" id="p" placeholder="" required="required" pattern="[0-9]" value=""  > <br />
+  
+
+<input type="button" name="btn" id="btn" value="Print" onclick="mul()" required="required"  />
+</div>
+
+
+
+</body>
+<script>
+function mul()
+{
+	var name = document.getElementById("n").value;
+	var quantity = document.getElementById("q").value;
+        var price = document.getElementById("p").value;
+		var mul = parseInt(quantity) * parseInt(price);
+		document.write("<h1>Wali Super Market Raseed </h1>");
+		document.write("<table border = '2'> ");
+		document.write("<tr> <td>" + "Username </td>");
+		document.write("<td>" + "wali</td> </tr>");
+		document.write("<tr> <td>" + "Password </td>");
+		document.write("<td>" + "123</td> </tr>");
+		document.write("<tr> <td>" + "Product Name </td>");
+		document.write("<td>" + name + "</td> </tr>");
+		
+		document.write("<tr> <td>" + "Product Quantity </td>");
+		document.write("<td>" + quantity + "</td> </tr>");
+		
+		document.write("<tr> <td>" + "Product Price </td>");
+		document.write("<td>" + price + "</td> </tr>");
+		
+		document.write("<tr> <td>" + " Total </td>");
+		document.write("<td>" + mul + "</td> </tr>");
+	
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+</html>
